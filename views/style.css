@@ -1,0 +1,287 @@
+:root {
+	--primary-clr: #464646;
+	--secondary-clr: #db3636;
+	--alt-clr: rgb(216, 216, 216);
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	color: var(--primary-clr);
+	font-size: 100%;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding: 1rem;
+}
+
+h3 {
+	padding-top: 2rem;
+	color: var(--secondary-clr);
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h4,
+h6 {
+	font-size: 2rem;
+}
+
+h5 {
+	font-size: 1rem;
+}
+
+/* header */
+
+.logo {
+	width: 100%;
+	max-width: 400px;
+}
+.nav ul {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.nav li a {
+	font-weight: 900;
+	text-decoration: none;
+	color: var(--primary-clr);
+}
+
+.nav li a:hover,
+.nav li a:focus {
+	color: var(--secondary-clr);
+	outline: none;
+}
+
+/* main */
+.slide {
+	position: relative;
+}
+
+.slide::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-color: #000;
+	opacity: 0.5;
+}
+
+.slide-img {
+	width: 100%;
+	min-height: 12rem;
+}
+
+.more {
+	color: #fff;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+/* jumps to about section */
+.more-btn {
+	font-weight: 900;
+	color: #fff;
+
+	font-weight: 700;
+	text-decoration: none;
+	margin: 1rem auto;
+	border: var(--secondary-clr) 4px solid;
+	padding: 0.25em 1em;
+	border-radius: 0.25em;
+}
+
+.more-btn:hover,
+:focus {
+	background-color: var(--secondary-clr);
+}
+
+/* about section */
+
+.flex-header {
+	display: flex;
+	align-items: center;
+}
+
+.about img {
+	display: block;
+	width: 5rem;
+	height: 5rem;
+	border-radius: 50%;
+	margin-right: 1rem;
+}
+
+.achievements {
+	list-style-type: none;
+}
+
+.check {
+	position: relative;
+	margin: 0 0 0 1rem;
+	padding: 0 0 1rem 1rem;
+}
+
+.check::before {
+	content: '\f14a';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	color: var(--secondary-clr);
+	position: absolute;
+	top: 1px;
+	left: 0;
+}
+
+/* count section */
+.counter {
+	background-image: url('/images/counterbackground.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	color: #fff;
+	background-color: #db3636e0;
+}
+
+.flex-item {
+	text-align: center;
+	flex: 1 1 10em;
+}
+
+/*  Services */
+.grid-container {
+	list-style-type: none;
+	display: grid;
+	grid-auto-flow: row;
+	gap: 1em;
+}
+
+.grid-container li:hover,
+.grid-container li:focus {
+	background-color: var(--secondary-clr);
+	color: #fff;
+}
+
+.grid-item {
+	border: var(--primary-clr) 1px solid;
+	height: 4rem;
+	display: flex;
+	place-items: center;
+}
+
+.grid-item i {
+	/* background-color: var(--alt-clr);
+	border: var(--alt-clr) 2px solid;
+	border-radius: 50%;*/
+	padding: 0.5em;
+	font-size: 1.5em;
+}
+
+/* Contact section*/
+
+.contact {
+	color: #fff;
+	background-image: url('/images/extra.png');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.overlay {
+	background-color: #000000a8;
+}
+.flex-container-contact {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	padding: 1em;
+}
+
+.flex-container-contact iframe {
+	max-width: 700px;
+	width: 100%;
+	max-height: 350px;
+}
+
+.contact-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	max-width: 25em;
+}
+
+.contact-list li {
+	display: flex;
+	place-items: center;
+	height: 6rem;
+}
+
+.contact-ico {
+	background-color: var(--secondary-clr);
+	color: #fff;
+	font-size: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	width: 64px;
+	text-align: center;
+	display: inline-block;
+	align-self: center;
+}
+.info {
+	color: #fff;
+	display: inline-block;
+	flex: 1 1 70%;
+}
+
+/* footer */
+footer {
+	color: #fff;
+	background-color: var(--secondary-clr);
+	display: flex;
+	place-items: center;
+}
+
+/* desktop view */
+@media only screen and (min-width: 800px) {
+	.header {
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 2em auto;
+	}
+	.nav ul {
+		display: flex;
+		list-style-type: none;
+	}
+
+	/* .more {
+		font-size: 150%;
+		top: 50%;
+	} */
+}
