@@ -27,28 +27,29 @@ targets.forEach(slideUp)
 
 // hamburger click event
 
-const hamburger = document.querySelector('.hamburger');
+const hamburger = document.querySelector('#hamburger');
 
-const nav = document.querySelector('nav>ul');
+const ul = document.querySelector('nav>ul');
 
 hamburger.addEventListener('click', () => {
-    if (hamburger.className == 'fas fa-bars hamburger') {
+    if (hamburger.className === 'fas fa-bars hamburger' || hamburger.className === 'fas fa-bars hamburger close') {
         hamburger.classList.toggle('open');
-        nav.style.display = 'block';
-        nav.style.animation = 'slide-right 0.5s ease'
+        hamburger.classList.remove('close');
+        ul.style.display = 'block';
+        ul.style.animation = 'slide-right 0.5s ease';
     }
     else {
-        hamburger.classList.toggle('open');
-        nav.style.animation = 'slide-off 0.5s ease forwards'
-        // nav.style.display = 'none';
+        hamburger.classList.toggle('close');
+        hamburger.classList.remove('open');
+        ul.style.animation = 'slide-off 0.5s ease forwards';
 
     }
 
 })
 // add click event to ul of hamburger menu to slide off screen and close menu
-nav.addEventListener('click', () => {
+ul.addEventListener('click', () => {
     hamburger.classList.toggle('open');
-    nav.style.animation = 'slide-off 0.5s ease forwards';
+    ul.style.animation = 'slide-off 0.5s ease forwards';
 })
 
 // image gallery
