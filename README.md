@@ -1,1 +1,1 @@
-john capsanis website hosted on heroku
+john capsanis website hosted on gcp
