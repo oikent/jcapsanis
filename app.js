@@ -16,7 +16,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 80;
+const port = 8080;
 
 app.use(express.static(__dirname + '/views'));
 // app.get('/', function (req, res) {
