@@ -1,4 +1,4 @@
-<div  align="center">
+<div  align="center" color="white">
     <a href='https://jcapsanislawyer.com.au'><img src='https://jcapsanislawyer.com.au/images/logo-blue.png'></a>
 </div>
 
