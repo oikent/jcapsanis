@@ -154,8 +154,7 @@ body {
     color: var(--primary-clr);
     font-size: 100%;
     max-width: 1200px;
-    display: grid;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 h1,
