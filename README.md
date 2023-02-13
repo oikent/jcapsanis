@@ -1,9 +1,8 @@
 <div  align='center'>
-<img src='https://jcapsanislawyer.com.au/images/logo-blue.png'>
+    <a href='https://jcapsanislawyer.com.au'><img src='https://jcapsanislawyer.com.au/images/logo-blue.png'></a>
 </div>
 
-
-# Live jcapsanislawyer.com.au
+# Live [jcapsanislawyer.com.au](https://jcapsanislawyer.com.au)
 
 # Github Actions - Self-hosted Runner
 
